@@ -122,6 +122,7 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblYouNeedA);
 		
 		finalgrade = new JTextField();
+		finalgrade.setEditable(false);
 		finalgrade.setBounds(204, 386, 213, 45);
 		frame.getContentPane().add(finalgrade);
 		finalgrade.setColumns(10);
@@ -131,6 +132,7 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblOnTheFinal);
 		
 		desiredgrade = new JTextField();
+		desiredgrade.setEditable(false);
 		desiredgrade.setBounds(31, 450, 172, 45);
 		frame.getContentPane().add(desiredgrade);
 		desiredgrade.setColumns(10);
