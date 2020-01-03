@@ -182,9 +182,9 @@ public class FinalGradeCalc {
 						gradesLeft = (1.0-w1-w2-w3-w4-w5)*100;
 						current_grade=(g1*w1)+(g2*w2)+(g3*w3)+(g4*w4)+(g5*w5);
 						i=desired-current_grade;
-						finalg=i/gradesLeft;
+						finalg=Math.round(((i/gradesLeft)*100)*100.0)/100.0;
 						desiredgrade.setText(textField.getText());
-						finalgrade.setText(Double.toString(finalg));
+						finalgrade.setText(Double.toString(finalg)+"%");
 					}
 				}catch (Exception e){
 					JOptionPane.showMessageDialog(null, "enter a valid number");
