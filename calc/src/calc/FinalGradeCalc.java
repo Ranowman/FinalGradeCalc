@@ -26,6 +26,11 @@ public class FinalGradeCalc {
 	private JTextField finalgrade;
 	private JTextField desiredgrade;
 	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
 
 	/**
 	 * Launch the application.
@@ -55,65 +60,65 @@ public class FinalGradeCalc {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 847, 615);
+		frame.setBounds(100, 100, 920, 615);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		grade1 = new JTextField();
-		grade1.setBounds(31, 60, 225, 45);
+		grade1.setBounds(221, 60, 161, 39);
 		frame.getContentPane().add(grade1);
 		grade1.setColumns(10);
 		
 		worth1 = new JTextField();
-		worth1.setBounds(328, 60, 193, 45);
+		worth1.setBounds(448, 60, 161, 39);
 		frame.getContentPane().add(worth1);
 		worth1.setColumns(10);
 		
 		grade2 = new JTextField();
-		grade2.setBounds(31, 122, 225, 39);
+		grade2.setBounds(221, 122, 161, 39);
 		frame.getContentPane().add(grade2);
 		grade2.setColumns(10);
 		
 		worth2 = new JTextField();
-		worth2.setBounds(328, 122, 193, 39);
+		worth2.setBounds(448, 122, 161, 39);
 		frame.getContentPane().add(worth2);
 		worth2.setColumns(10);
 		
 		grade3 = new JTextField();
-		grade3.setBounds(31, 187, 225, 45);
+		grade3.setBounds(221, 187, 161, 39);
 		frame.getContentPane().add(grade3);
 		grade3.setColumns(10);
 		
 		worth3 = new JTextField();
-		worth3.setBounds(328, 194, 193, 45);
+		worth3.setBounds(448, 187, 161, 39);
 		frame.getContentPane().add(worth3);
 		worth3.setColumns(10);
 		
 		grade4 = new JTextField();
-		grade4.setBounds(31, 249, 225, 45);
+		grade4.setBounds(221, 249, 161, 39);
 		frame.getContentPane().add(grade4);
 		grade4.setColumns(10);
 		
 		worth4 = new JTextField();
-		worth4.setBounds(328, 249, 193, 45);
+		worth4.setBounds(448, 249, 161, 39);
 		frame.getContentPane().add(worth4);
 		worth4.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Grade");
-		lblNewLabel.setBounds(48, 10, 138, 39);
+		lblNewLabel.setBounds(242, 10, 138, 39);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblWorth = new JLabel("Worth");
-		lblWorth.setBounds(355, 10, 138, 39);
+		lblWorth.setBounds(471, 10, 138, 39);
 		frame.getContentPane().add(lblWorth);
 		
 		grade5 = new JTextField();
-		grade5.setBounds(31, 307, 225, 45);
+		grade5.setBounds(221, 307, 161, 39);
 		frame.getContentPane().add(grade5);
 		grade5.setColumns(10);
 		
 		worth5 = new JTextField();
-		worth5.setBounds(328, 307, 193, 45);
+		worth5.setBounds(448, 307, 161, 39);
 		frame.getContentPane().add(worth5);
 		worth5.setColumns(10);
 		
@@ -142,12 +147,12 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblInTheClass);
 		
 		textField = new JTextField();
-		textField.setBounds(564, 146, 203, 39);
+		textField.setBounds(659, 137, 203, 39);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblDesiredGrade = new JLabel("Desired Grade");
-		lblDesiredGrade.setBounds(567, 84, 213, 39);
+		lblDesiredGrade.setBounds(659, 85, 213, 39);
 		frame.getContentPane().add(lblDesiredGrade);
 		
 		JButton btnCalculate = new JButton("Calculate");
@@ -191,7 +196,36 @@ public class FinalGradeCalc {
 				}
 			}
 		});
-		btnCalculate.setBounds(570, 287, 197, 47);
+		btnCalculate.setBounds(659, 209, 197, 47);
 		frame.getContentPane().add(btnCalculate);
+		
+		JLabel lblAssignment = new JLabel("Assignment");
+		lblAssignment.setBounds(19, 10, 163, 39);
+		frame.getContentPane().add(lblAssignment);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(19, 60, 171, 45);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(19, 119, 171, 45);
+		frame.getContentPane().add(textField_2);
+		
+		textField_3 = new JTextField();
+		textField_3.setColumns(10);
+		textField_3.setBounds(19, 187, 171, 45);
+		frame.getContentPane().add(textField_3);
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		textField_4.setBounds(19, 249, 171, 45);
+		frame.getContentPane().add(textField_4);
+		
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(19, 307, 171, 45);
+		frame.getContentPane().add(textField_5);
 	}
 }
