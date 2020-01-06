@@ -191,10 +191,7 @@ public class FinalGradeCalc {
 					w4=Double.parseDouble(worth4.getText())/100;
 					w5=Double.parseDouble(worth5.getText())/100;
 					
-					if (w1+w2+w3+w4+w5>=1.0) {
-						JOptionPane.showMessageDialog(null, "no grades left");
-					}
-					else {
+					if (w1+w2+w3+w4+w5<1.0 && hasNegative(g1,g2,g3,g4,g5,w1,w2,w3,w4,w5)==false) {
 						gradesLeft = (1.0-w1-w2-w3-w4-w5)*100;
 						current_grade=(g1*w1)+(g2*w2)+(g3*w3)+(g4*w4)+(g5*w5);
 						i=desired-current_grade;
@@ -202,11 +199,15 @@ public class FinalGradeCalc {
 						desiredgrade.setText(textField.getText());
 						finalgrade.setText(Double.toString(finalg)+"%");
 					}
+					else {
+						JOptionPane.showMessageDialog(null, "no grades left or negative number");
+					}
 				}catch (Exception e){
 					JOptionPane.showMessageDialog(null, "enter a valid number");
 				}
 			}
 		});
+	
 		btnCalculate.setBounds(659, 209, 197, 47);
 		frame.getContentPane().add(btnCalculate);
 		
@@ -238,5 +239,13 @@ public class FinalGradeCalc {
 		textField_5.setColumns(10);
 		textField_5.setBounds(19, 307, 171, 45);
 		frame.getContentPane().add(textField_5);
+	}
+	private boolean hasNegative(double...values) {
+		for (double i:values) {
+			if (i<0) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
