@@ -65,41 +65,49 @@ public class FinalGradeCalc {
 		frame.getContentPane().setLayout(null);
 		
 		grade1 = new JTextField();
+		grade1.setText("0");
 		grade1.setBounds(221, 60, 161, 39);
 		frame.getContentPane().add(grade1);
 		grade1.setColumns(10);
 		
 		worth1 = new JTextField();
+		worth1.setText("0");
 		worth1.setBounds(448, 60, 161, 39);
 		frame.getContentPane().add(worth1);
 		worth1.setColumns(10);
 		
 		grade2 = new JTextField();
+		grade2.setText("0");
 		grade2.setBounds(221, 122, 161, 39);
 		frame.getContentPane().add(grade2);
 		grade2.setColumns(10);
 		
 		worth2 = new JTextField();
+		worth2.setText("0");
 		worth2.setBounds(448, 122, 161, 39);
 		frame.getContentPane().add(worth2);
 		worth2.setColumns(10);
 		
 		grade3 = new JTextField();
+		grade3.setText("0");
 		grade3.setBounds(221, 187, 161, 39);
 		frame.getContentPane().add(grade3);
 		grade3.setColumns(10);
 		
 		worth3 = new JTextField();
+		worth3.setText("0");
 		worth3.setBounds(448, 187, 161, 39);
 		frame.getContentPane().add(worth3);
 		worth3.setColumns(10);
 		
 		grade4 = new JTextField();
+		grade4.setText("0");
 		grade4.setBounds(221, 249, 161, 39);
 		frame.getContentPane().add(grade4);
 		grade4.setColumns(10);
 		
 		worth4 = new JTextField();
+		worth4.setText("0");
 		worth4.setBounds(448, 249, 161, 39);
 		frame.getContentPane().add(worth4);
 		worth4.setColumns(10);
@@ -113,11 +121,13 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblWorth);
 		
 		grade5 = new JTextField();
+		grade5.setText("0");
 		grade5.setBounds(221, 307, 161, 39);
 		frame.getContentPane().add(grade5);
 		grade5.setColumns(10);
 		
 		worth5 = new JTextField();
+		worth5.setText("0");
 		worth5.setBounds(448, 307, 161, 39);
 		frame.getContentPane().add(worth5);
 		worth5.setColumns(10);
@@ -147,6 +157,7 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblInTheClass);
 		
 		textField = new JTextField();
+		textField.setText("0");
 		textField.setBounds(659, 137, 203, 39);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
