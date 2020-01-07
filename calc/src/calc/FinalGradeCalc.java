@@ -66,49 +66,49 @@ public class FinalGradeCalc {
 		
 		grade1 = new JTextField();
 		grade1.setText("0");
-		grade1.setBounds(221, 60, 161, 39);
+		grade1.setBounds(221, 60, 120, 39);
 		frame.getContentPane().add(grade1);
 		grade1.setColumns(10);
 		
 		worth1 = new JTextField();
 		worth1.setText("0");
-		worth1.setBounds(448, 60, 161, 39);
+		worth1.setBounds(448, 60, 120, 39);
 		frame.getContentPane().add(worth1);
 		worth1.setColumns(10);
 		
 		grade2 = new JTextField();
 		grade2.setText("0");
-		grade2.setBounds(221, 122, 161, 39);
+		grade2.setBounds(221, 122, 120, 39);
 		frame.getContentPane().add(grade2);
 		grade2.setColumns(10);
 		
 		worth2 = new JTextField();
 		worth2.setText("0");
-		worth2.setBounds(448, 122, 161, 39);
+		worth2.setBounds(448, 122, 120, 39);
 		frame.getContentPane().add(worth2);
 		worth2.setColumns(10);
 		
 		grade3 = new JTextField();
 		grade3.setText("0");
-		grade3.setBounds(221, 187, 161, 39);
+		grade3.setBounds(221, 187, 120, 39);
 		frame.getContentPane().add(grade3);
 		grade3.setColumns(10);
 		
 		worth3 = new JTextField();
 		worth3.setText("0");
-		worth3.setBounds(448, 187, 161, 39);
+		worth3.setBounds(448, 187, 120, 39);
 		frame.getContentPane().add(worth3);
 		worth3.setColumns(10);
 		
 		grade4 = new JTextField();
 		grade4.setText("0");
-		grade4.setBounds(221, 249, 161, 39);
+		grade4.setBounds(221, 249, 120, 39);
 		frame.getContentPane().add(grade4);
 		grade4.setColumns(10);
 		
 		worth4 = new JTextField();
 		worth4.setText("0");
-		worth4.setBounds(448, 249, 161, 39);
+		worth4.setBounds(448, 249, 120, 39);
 		frame.getContentPane().add(worth4);
 		worth4.setColumns(10);
 		
@@ -122,13 +122,13 @@ public class FinalGradeCalc {
 		
 		grade5 = new JTextField();
 		grade5.setText("0");
-		grade5.setBounds(221, 307, 161, 39);
+		grade5.setBounds(221, 307, 120, 39);
 		frame.getContentPane().add(grade5);
 		grade5.setColumns(10);
 		
 		worth5 = new JTextField();
 		worth5.setText("0");
-		worth5.setBounds(448, 307, 161, 39);
+		worth5.setBounds(448, 307, 120, 39);
 		frame.getContentPane().add(worth5);
 		worth5.setColumns(10);
 		
@@ -191,7 +191,7 @@ public class FinalGradeCalc {
 					w4=Double.parseDouble(worth4.getText())/100;
 					w5=Double.parseDouble(worth5.getText())/100;
 					
-					if (w1+w2+w3+w4+w5<1.0 && hasNegative(g1,g2,g3,g4,g5,w1,w2,w3,w4,w5)==false) {
+					if (w1+w2+w3+w4+w5<1.0 && hasNegative(g1,g2,g3,g4,g5,w1,w2,w3,w4,w5,desired)==false) {
 						gradesLeft = (1.0-w1-w2-w3-w4-w5)*100;
 						current_grade=(g1*w1)+(g2*w2)+(g3*w3)+(g4*w4)+(g5*w5);
 						i=desired-current_grade;
@@ -200,10 +200,10 @@ public class FinalGradeCalc {
 						finalgrade.setText(Double.toString(finalg)+"%");
 					}
 					else {
-						JOptionPane.showMessageDialog(null, "no grades left or negative number");
+						JOptionPane.showMessageDialog(null, "no grades left or negative number entered");
 					}
 				}catch (Exception e){
-					JOptionPane.showMessageDialog(null, "enter a valid number");
+					JOptionPane.showMessageDialog(null, "entries must only be numbers");
 				}
 			}
 		});
@@ -216,28 +216,28 @@ public class FinalGradeCalc {
 		frame.getContentPane().add(lblAssignment);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(19, 60, 171, 45);
+		textField_1.setBounds(19, 60, 161, 39);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(19, 119, 171, 45);
+		textField_2.setBounds(19, 119, 161, 39);
 		frame.getContentPane().add(textField_2);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(19, 187, 171, 45);
+		textField_3.setBounds(19, 187, 161, 39);
 		frame.getContentPane().add(textField_3);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(19, 249, 171, 45);
+		textField_4.setBounds(19, 249, 161, 39);
 		frame.getContentPane().add(textField_4);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(19, 307, 171, 45);
+		textField_5.setBounds(19, 307, 161, 39);
 		frame.getContentPane().add(textField_5);
 	}
 	private boolean hasNegative(double...values) {
